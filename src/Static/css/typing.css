@@ -1,0 +1,16 @@
+.typing{
+    animation: monotonous-opacity 0.67s infinite ease;
+}
+
+.landing-starter{
+    animation: monotonous-opacity 2s ease;
+}
+
+@keyframes monotonous-opacity{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

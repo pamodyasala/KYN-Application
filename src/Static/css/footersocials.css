@@ -1,0 +1,40 @@
+.kyn-footer{
+    background-color: black !important;
+}
+
+.socials{
+    position: relative;
+    display: block;
+    padding: 0.66rem;
+    text-decoration: none;
+    color: #d1a080 !important;
+    z-index: 121;
+}
+
+.socials::before{
+    content:"";
+    border-radius: 0.55rem !important;
+    position: absolute;
+    z-index: -1;
+    background-color: maroon;
+    width: 0%;
+    height: 100%;   
+    left: 50%;
+    top:50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+}
+
+.socials, .socials::before{
+    transition: all 500ms ease-in-out;
+}
+
+.socials:hover{
+    color:white !important;    
+}
+
+.socials:hover::before{
+    opacity: 1;
+    width: 100%;  
+}
+
